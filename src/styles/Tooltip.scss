@@ -1,0 +1,20 @@
+.tooltip {
+    position: relative;
+    background-color: #E4EBFD;
+    border-radius: var(--border-radius-med);
+    padding: 10px;
+    color: #325BC3;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: left;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 90%;
+        background-color: #E4EBFD;
+        width: 15px;
+        height: 15px;
+        transform: translate(-50%, calc(100% + 7px)) rotate(45deg);
+    }
+}
